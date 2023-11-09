@@ -78,8 +78,8 @@ export default class MessageController {
     }
   }
   _checkCoords(coords) {
-    const re = /^[-−]?\d{1,2}.\d{5},\s?[-−]?\d{1,3}.\d{5,}$/;
-    const re_sq = /^\[[-−]?\d{1,2}.\d{5},\s?[-−]?\d{1,3}.\d{5,}\]$/;
+    const re = /^[-−]?\d{1,2}.\d{5,},\s?[-−]?\d{1,3}.\d{5,}$/;
+    const re_sq = /^\[[-−]?\d{1,2}.\d{5,},\s?[-−]?\d{1,3}.\d{5,}\]$/;
     return re.test(coords) || re_sq.test(coords);
   }
 }
